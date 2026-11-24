@@ -1,4 +1,4 @@
-"C:\Users\dipan\OneDrive\Desktop\pii-risk-score-generator"package com.example.backend;
+package com.example.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
