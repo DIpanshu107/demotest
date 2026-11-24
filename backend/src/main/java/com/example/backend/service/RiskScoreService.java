@@ -82,16 +82,16 @@ public class RiskScoreService {
     private List<String> buildRecommendations(List<String> piiTypes, int breachCount) {
         List<String> tips = new ArrayList<>();
         if (breachCount > 0) {
-            tips.add("Apne email account ka password turant change karein aur Two-Factor Authentication (2FA) on karein.");
+            tips.add("Change your email account password immediately and enable Two-Factor Authentication (2FA).");
         }
         if (piiTypes.contains("PAN") || piiTypes.contains("AADHAAR")) {
-            tips.add("Unmasked Aadhaar/PAN details public text, forms, ya unverified apps par share na karein.");
+            tips.add("Do not share unmasked Aadhaar or PAN details in public text, on forms, or on unverified apps.");
         }
         if (piiTypes.contains("PHONE")) {
-            tips.add("SIM-swap fraud se bachne ke liye apne telecom operator se carrier/port lock enable karein.");
+            tips.add("To protect yourself from SIM-swap fraud, enable a carrier/port lock with your telecom operator.");
         }
         if (tips.isEmpty()) {
-            tips.add("Aapka exposure abhi low hai. Strong passwords aur periodic privacy checks jari rakhein.");
+            tips.add("Your exposure is currently low. Continue using strong passwords and performing periodic privacy checks.");
         }
         return tips;
     }
