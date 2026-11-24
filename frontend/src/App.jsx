@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ShieldAlert, ShieldCheck, Mail, FileText, Lock, Sparkles, AlertTriangle } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:8080/api/risk-score";
+const API_BASE_URL = "https://demotest-production-07b01c3b.up.railway.app/api/risk-score";//"http://localhost:8080/api/risk-score";
 
 export default function App() {
   const [email, setEmail] = useState("");
